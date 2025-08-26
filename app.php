@@ -48,6 +48,16 @@ if (!$f3->exists('REVERSE_PROXY_URL')) {
     $f3->set('REVERSE_PROXY_URL', '');
 }
 
+if ($f3->get('TOOLS_PATH')) {
+    if (!is_dir($f3->get('TOOLS_PATH'))) {
+        error_log('Path to additional tools doesn\'t exist', 0);
+    } else {
+        $currentpath = getenv('PATH');
+        $addltoolspath = $f3->get('TOOLS_PATH') . ':' . $currentpath;
+        putenv("PATH=$addltoolspath");
+    }
+}
+
 if($f3->get('PDF_STORAGE_PATH') && !preg_match('|/$|', $f3->get('PDF_STORAGE_PATH'))) {
     $f3->set('PDF_STORAGE_PATH', $f3->get('PDF_STORAGE_PATH').'/');
 }
