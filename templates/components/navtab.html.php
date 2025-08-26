@@ -1,5 +1,5 @@
 <nav>
-    <a class="link-dark" href="<?php echo $REVERSE_PROXY_URL; ?>/"><img src="logo-small.svg" style="height: 40px; position: absolute;top: 5px;left: 8px;" />
+    <a class="link-dark" href="<?php echo $REVERSE_PROXY_URL; ?>/"><img src="<?php echo $REVERSE_PROXY_URL; ?>/logo-small.svg" style="height: 40px; position: absolute;top: 5px;left: 8px;" />
     <span class="d-none d-lg-inline" style="font-size: 15px; position: absolute;top: 10px;left: 54px;">Signature PDF</span>
     <span class="opacity-50 d-none d-lg-inline" style="font-size: 12px; position: absolute;top: 28px;left: 54px;"><?php echo _("Sign and manipulate PDFs freely") ?></span ></a>
 <?php if(!$disableOrganization): ?>
