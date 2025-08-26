@@ -142,6 +142,7 @@ It's possible to add a custom CSS file to the location `public/css/app-specific.
 
 If this file exists, it will be loaded automatically.
 
+It is also possible to add a custom CSS file solely for shared PDFs in multi-signature mode.  Add a custom CSS file to the location `public/css/share-specific.css` and if it exists, it will be loaded automatically.
 
 ### Custom retention period for shared PDF
 
