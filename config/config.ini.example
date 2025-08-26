@@ -30,6 +30,9 @@ PDF_STORAGE_PATH=/path/to/folder
 ; Enable the edition of local server pdf metadata
 ; PDF_LOCAL_PATH=/path/to/pdf/metadata/edition
 
+; Add an additional search path to installed tools (convert, mkbitmap, potrace, gs), no trailing slash
+;TOOLS_PATH=/path/to/installed/tools
+
 ; Custom options for the signature page
 ;[signature]
 
